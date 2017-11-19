@@ -1,21 +1,16 @@
 <div class="row">
-  <div class="col-md-2"></div>
-<div class="col-md-8">
-  <%= form_with scope: :post, url: posts_path, local: true do |form| %>
-      <div class="form-group">
-        <%= form.label :title %><br>
-        <%= form.text_field :title, class: "form-control" %>
+  <div class="container">
+      <%= form_with scope: :post, class: "custom-container", url: posts_path, local: true do |form| %>
+          <div class="form-group">
+            <%= form.label :title %><br>
+            <%= form.text_field :title, class: "form-control" %>
 
-      </div>
-      <div class="form-group">
-        <%= form.label :story %><br>
-        <%= form.text_area :story, class: "form-control", rows: "20" %>
-      </div>
-
-      <p>
-        <%= form.submit %>
-      </p>
-  <% end %>
-</div>
-  <div class="col-md-2"></div>
+          </div>
+          <div class="form-group">
+            <%= form.label :story %><br>
+            <%= form.text_area :story, class: "form-control", rows: "20" %>
+          </div>
+        <%= form.submit "Publish", class: "btn btn-light" %>
+      <% end %>
+  </div>
 </div>
