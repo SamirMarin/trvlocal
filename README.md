@@ -1,24 +1,35 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple travel blog using pure ruby on rails.
 
-Things you may want to cover:
+you will need have ruby and rails in your local enviroment to build the project.
 
-* Ruby version
+project is using rails `5.1.4`
+I'm using ruby version `2.4.1` to develop
 
-* System dependencies
+to build simply clone the project and run 
 
-* Configuration
+```
+bundle install --without production
+```
 
-* Database creation
+then run
 
-* Database initialization
+```
+rails db:migrate
+```
 
-* How to run the test suite
+to set up datebase. Currenlty using sqlite in development.
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+to run test simply run
 
-* ...
+```
+rails test
+```
+
+to run local server
+
+```
+rails server
+```
