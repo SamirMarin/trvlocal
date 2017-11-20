@@ -2,7 +2,7 @@
 
 This is a simple travel blog using pure ruby on rails.
 
-you will need have ruby and rails in your local enviroment to build the project.
+you will need have ruby and rails in your local enviroment to build and run the project.
 
 project is using rails `5.1.4`
 I'm using ruby version `2.4.1` to develop
